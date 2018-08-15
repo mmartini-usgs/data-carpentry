@@ -44,7 +44,6 @@ def plot_data(cube, month, gridlines=False):
     title = '%s precipitation climatology (%s)' %(cube.attributes['model_id'], month)
     plt.title(title)
 
-
 def main(inargs):
     """Run the program."""
 
@@ -56,7 +55,7 @@ def main(inargs):
 
 
 if __name__ == '__main__':
-    description='Plot the precipitation climatology.'
+    description='Plot the precipitation climatology for a given month.'
     parser = argparse.ArgumentParser(description=description)
     
     parser.add_argument("infile", type=str, help="Input file name")
